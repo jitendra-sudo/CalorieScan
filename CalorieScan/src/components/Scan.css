@@ -1,0 +1,133 @@
+body{
+    color:black;
+    background-color:white;
+    /* background: rgba(0, 0, 0, 0.11); */
+} 
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+.headering{
+  
+    padding-left: 30px;
+    background: rgba(0, 0, 0, 0.09);
+    border-radius: 0px 2px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.header{
+    padding-top:6px;
+    padding-bottom: 4px;
+}
+
+.headering img{
+    width: 110px;
+
+  
+}
+
+.main{
+    margin: 22px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    color: rgb(46, 45, 45);
+    background: rgba(0, 0, 0, 0.04);
+    padding: 6px;
+}
+
+.listdata{
+    padding-left: 30px;
+    /* border: 2px solid; */
+}
+.main .scan{
+    font-size: large;
+    font-family:  Tahoma;
+    font-weight: bold;
+}
+.scan-container{
+   color: none;
+   border: none;
+   background: none;
+}
+.scan-container .img{
+    width: 40%;
+  
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+.scan-container img:hover{
+    background-color: rgba(23, 204, 183, 0.92);
+}
+
+.qrCode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 0px;
+    background: white;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 8px;
+    z-index: 1000; 
+    animation: popIn 0.3s ease-in-out; 
+  }
+  
+  .qrCode .Scanner {
+    margin-bottom: 20px;
+  }
+  
+  .qrCode .Scanner h2 {
+    text-align: center;
+    font-size: 18px;
+    
+  }
+  
+  .qrCode .camera-view {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+  }
+  
+  .qrCode .error {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  
+  .qrCode-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 999; 
+  }
+  
+  
+  @keyframes popIn {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -60%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
