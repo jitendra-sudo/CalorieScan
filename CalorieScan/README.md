@@ -77,6 +77,4 @@ The app will be accessible at `http://localhost:3000`.
 - **Camera Access Issues**: Make sure that the browser has permission to access the camera for QR scanning.
 - **QR Code Error**: If the QR code is not working, verify that it contains properly formatted JSON data.
 
-## License
 
-This project is licensed under the MIT License.
