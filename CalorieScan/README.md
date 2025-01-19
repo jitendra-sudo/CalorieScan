@@ -1,4 +1,4 @@
-# Food Calorie Scanner
+# Food Calorie Scanner : CalorieScan
 
 A web application that allows users to scan QR codes or select dishes from a list to view detailed information about the calories and nutrition of food items.
 
