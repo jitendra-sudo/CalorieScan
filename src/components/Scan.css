@@ -1,0 +1,304 @@
+body{
+    color:black;
+    background-color:white;
+    /* background: rgba(0, 0, 0, 0.11); */
+} 
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+.headering{
+  
+    padding-left: 30px;
+    background: rgba(0, 0, 0, 0.09);
+    border-radius: 0px 2px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.header{
+    padding-top:6px;
+    padding-bottom: 4px;
+}
+
+.headering img{
+    width: 110px;
+
+  
+}
+
+.main{
+    margin: 22px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    color: rgb(46, 45, 45);
+    background: rgba(0, 0, 0, 0.04);
+    padding: 6px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+   font-family: c;
+}
+
+.listdata{
+    padding-left: 30px;
+    /* border: 2px solid; */
+}
+.main .scan{
+    font-size: large;
+    /* font-family:  Tahoma; */
+    font-family: cursive;
+    font-weight: bold;
+    padding-left: 10px;
+
+}
+.scan-container{
+   color: none;
+   border: none;
+   background: none;
+}
+.scan-container .img{
+    width: 40%;
+  
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+.scan-container img:hover{
+    background-color: rgba(23, 204, 183, 0.92);
+}
+
+.qrCode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 0px;
+    background: white;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 8px;
+    z-index: 1000; 
+    animation: popIn 0.3s ease-in-out; 
+  }
+  
+  .qrCode .Scanner {
+    margin-bottom: 20px;
+  }
+  
+  .qrCode .Scanner h2 {
+    text-align: center;
+    font-size: 18px;
+    
+  }
+  
+  .qrCode .camera-view {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+  }
+  
+  .qrCode .error {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  
+  .qrCode-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 999; 
+  }
+  
+  
+  @keyframes popIn {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -60%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+.selected-option{
+  display: flex;
+  align-items: center;
+}
+
+.selected-option select{
+    font-weight: bold;
+    background: rgba(60, 59, 59, 0.04);
+    border-radius: 4px;
+    padding: 4px 0px;
+    color: #222121;
+    font-family: cursive;
+    
+}
+.selected-option select:hover{
+border-color: rgb(127, 52, 52);
+
+}
+
+.selected-option h4{
+ padding-right: 20px;
+ font-family:cursive;
+}
+.DishCalorie{
+  margin: 30px 0px;
+}
+
+.items .listdata{
+  margin-bottom: 10px;
+  /* border: 2px solid; */
+}
+.DishCalorie{
+  margin: 40px 23px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background:rgba(36, 34, 34, 0.08) ;
+  border-radius: 5px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;  
+   font-family: cursive; 
+}
+.items .listdata h2{
+  color: rgb(70, 213, 65);
+  
+}
+.listdata span{
+  color: rgb(28, 171, 15);
+  font-weight: bold;
+  padding-right: 10px;
+}
+.dishhead{
+  padding: 19px 19px;
+
+}
+.dishhead h2{
+  font-family: cursive;
+}
+
+.tophead{
+  border-radius: 6px;
+  padding: 6px 49px;
+  background: rgba(40, 176, 13, 0.3);
+  box-shadow: rgba(23, 235, 80, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+}
+.listdata h3{
+  display: inline-block;
+  color: rgb(28, 171, 15);
+  background: rgba(40, 176, 13, 0.3);
+  padding: 6px 30px;
+  border-radius: 6px;
+}
+.listdata ul{
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.listdata ul li{
+  /* border: 2px solid; */
+  margin: 6px;
+  padding: 11px 11px;
+  border-radius: 4px;
+  font-weight: bold;
+  color:rgba(0, 0, 0, 0.9);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: rgba(5, 62, 13, 0.31);
+  font-family: cursive;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+input{
+  background:transparent;
+  border-color:rgba(6, 5, 5, 0.3) ;
+  padding: 4px;
+  border-radius: 4px;
+  border:0.5;
+}
+.listdata .itemNutrition{
+
+  padding: 20px ;
+  font-weight: bold;
+  background: rgba(46, 219, 72, 0.31);
+  background: rgba(5, 62, 13, 0.31);
+
+/* background: rgba(0, 0, 0, 0.31); */
+}
+
+.itemNet{
+  display:flex;
+  flex-wrap: wrap;
+  margin: 28px;
+  justify-content: center;
+
+}
+
+.itemNutrition{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ margin: 8px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.31);
+  
+}
+.itemNutrition p{
+        padding: 4px;
+}
+.itemNutrition .cal{
+  display: inline-block;
+        padding: 0px;
+        color: rgb(68, 80, 83);
+        font-family: "Gill Sans", sans-serif;
+ 
+}
+.itemNutrition p strong{
+  color: rgba(171, 29, 29, 0.9);
+  font-family: "Gill Sans", sans-serif;}
+.itemNutrition bold{
+  color: rgb(6, 6, 152);
+  font-family: "Gill Sans", sans-serif;
+}
+
+.DishTotal{
+  display: flex;
+  justify-content: center;
+}
+.DishTotal h3{
+  background: rgba(0, 0, 0, 0.09);
+}
+
+
+.totalDish{
+  color: rgb(149, 24, 24);
+}
+
+.totalDish{
+  display: inline-block;
+}
+.meter{
+  display: inline-block;
+  color: rgb(241, 36, 36);
+}
+
+.NoData{
+  display: flex;
+  justify-content: center;
+}
+
